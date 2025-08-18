@@ -29,7 +29,7 @@ public class Client {
         
         System.out.println("\nStart generating RSA key");
          KeyPairGenerator keyGenRSA = KeyPairGenerator.getInstance("RSA");
-         keyGenRSA.initialize(1024);
+         keyGenRSA.initialize(4096);
          KeyPair keyRSA = keyGenRSA.generateKeyPair();
          clientPrivateKey = keyRSA.getPrivate();
          PublicKey clientPublicKey = keyRSA.getPublic();
