@@ -19,7 +19,7 @@ public class Server {
     static void generateRSAKeyPair() throws NoSuchAlgorithmException{
          System.out.println("\nStart generating RSA key");
             KeyPairGenerator keyGenRSA = KeyPairGenerator.getInstance("RSA");
-            keyGenRSA.initialize(1024);
+            keyGenRSA.initialize(4096);
             KeyPair keyRSA = keyGenRSA.generateKeyPair();
              serverPrivateKey = keyRSA.getPrivate();
             serverPublicKey = keyRSA.getPublic();
